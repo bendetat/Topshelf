@@ -42,3 +42,9 @@ Is Topshelf just for Windows?
 
 Topshelf works with Mono, making it possible to deploy services to Linux. The service installation features are currently Windows only, but others are working on creating native host environment support so that installation and management features are available as well.
 
+Can I use Octopus Deploy to deploy my service?
+----------------------------------------------
+
+Yes. A NuGet deploy step needs to be configured to use the Windows Service feature. The service name set by Octopus needs to match the service name configured using Topshelf otherwise the service won't start. For more instructions [see the Octopus Deploy documentation](http://docs.octopusdeploy.com/display/OD/Windows+Services).
+
+
